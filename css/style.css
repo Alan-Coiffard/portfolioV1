@@ -1,0 +1,531 @@
+html, body {
+    background-color: grey;
+    font-size: 16px;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+    padding: 0; 
+font-family: 'tout';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.noflow {
+    overflow-x: hidden;
+}
+.noflowtt {
+    overflow: hidden;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+/* ||   INDEX    || */
+
+.imageIndex {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 1px;
+}
+
+
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.blockTitre {
+    width: 80%;
+    padding-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.sous-titre {
+    text-indent: 20px;
+    font-size: 30px;
+    text-shadow: 0.7px 0.7px black;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+    display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+
+
+/* ||   FIN INDEX    || */
+
+.imagePres {
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ||   PAGE CONTACT      || */
+
+h2 {
+    font-size: 35px;
+    text-decoration: underline;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.blockAdress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blockAdress h4 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 1px;
+}
+
+@media screen and (max-width: 650px){
+    .blockAdress {
+        display: block;
+    }
+    .pageContact {
+        font-size: 15px;
+    }
+    .pContact a{
+    font-size: 15px;
+}
+
+}
+
+.pageContact {
+    z-index: 888;
+    background-color: rgba(0, 0, 0, .7);
+    width: 75vw;
+    height: 70vh;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+    text-decoration: none;
+    font-size: 20px;
+    position: fixed;
+    top: 25%;
+    padding: 10px;
+        list-style: none;
+
+}
+
+.pContact a{
+    font-size: 15px;
+}
+
+.pContact li, .pContact a, .pContact ul, .pContact p {
+    padding: 0;
+    margin: 0;
+}
+
+.pContact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+
+/* ||   FIN CONTACT  || */
+
+/* ||   NAV    || */
+
+.active {
+    color: yellow;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 110px;
+    font-family: 'font-menu';
+    padding-top: 10px;
+    background-color: black;
+    width: 100vw;
+}
+
+.e {
+    width: 100%;
+}
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
+.logo {
+    background-color: white;
+    width: 125px;
+    border-radius: 5px;
+}
+
+nav a {
+    width: 10%;
+}
+
+li a {
+    margin: 2vw;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.lang {
+    background-color: #DAD1D1FF;
+    padding: 5px;
+    
+    border: 3px solid grey;
+    border-radius: 5px;
+    color: grey;
+    transition: 0.5s
+}
+
+.lang a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.lang a {
+    margin-right: 10px;
+}
+
+.lang .select {
+    color: red;
+}
+
+@font-face{
+    font-family: 'font-menu';
+    src: url("../font/Baskervville-Italic.ttf");
+}
+@font-face{
+	font-family: 'tout';
+	src: url("../font/Baskervville-Regular.ttf");
+}
+
+@media screen and (min-width: 751px) {
+    .toggle_btn {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .block {
+        width: 200px;
+        position: fixed;
+        top: 94px;
+        left: 0;
+        bottom: 0;
+
+        background-color: grey;
+        padding-top: 10px;
+
+        text-align: center;
+        display: block;
+
+        text-decoration: underline;
+
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .e {
+        width: 50%;
+    }
+
+    li {
+        padding-top: 25px;
+        padding-right: 50px;
+    }
+
+    li a {
+        font-size: 25px;
+    }
+    li a:hover {
+        color: grey;
+        transition-duration: 0.5s;
+    }
+
+
+
+    .test{
+        margin-left: -240px;
+        transition-duration: 0.5s;
+    }
+
+    .test_open{
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+
+    .toggle_btn {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+
+    .toggle_btn span {
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .toggle_btn span:before {
+        content: '';
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+
+    .toggle_btn span:after {
+        content: '';
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    li {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-height: 360px) {
+    li {
+        padding-top: 10px;
+    }
+}
+/* ||   FIN NAV   || */
+
+/* ||   MAIN   || */
+
+main h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.h1 {
+  font-size: 50px;
+  padding: 25px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 20px;
+
+  height: 50vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.h1 p {
+  font-size: 30px;
+  text-transform: none;
+  font-weight: normal;
+  word-spacing: normal;
+
+}
+
+@media screen and (max-width: 700px) {
+  .blockCitation {
+    opacity: 0;
+  }
+}
+
+
+
+section article {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.8vw;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px;
+
+}
+
+section article h2 {
+    text-align: center;
+}
+
+section img {
+    height: auto;
+    max-width: 400px;
+    width: 35%;
+    float: right;
+	padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.mainI {
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+}
+
+.tele {
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 650px) {
+    section article p {
+        font-size: 15px;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    section article {
+        font-size: 18px;
+    }
+}
+
+.CV {
+    width: 100%;
+}
+.CV img {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+main article {
+    padding-bottom: 100px;
+}
+
+section a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+.mail, .tel {
+  font-size: 20px;
+}
+
+/* ||   FIN MAIN   || */
+/* ||   FOOTER   || */
+@font-face{
+    font-family: 'footer';
+    src: url('../font/Signatra.otf');
+}
+
+footer {
+    height: 88.3vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+footer h3 {
+    padding-left: 5vw;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+footer a img {
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imageF {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/* ||   FIN FOOTER   || */

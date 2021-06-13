@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Alan Coiffard</title>
+	<link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="apple-touch-icon">
+    
+    <!-- Main Stylesheet File -->
+    <link href="css/style-folio.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="lang">
+				<a href="folio.html">FR</a>
+				<a href="#" class="select">EN</a>
+			</div>
+			<a href="https://www.instagram.com/alan_coiffard/"><img class="logo" src="img/logo.png" alt="" width="50px;"></a>
+			<ul class="block test">
+				<li><a href="indexE.html" >Home</a></li>
+				<li><a href="presentationE.html" >Présentation</a></li>
+				<li><a class="active" href="#" >Portfolio</a></li>
+				<li><a href="contactE.html" >Contact</a></li>
+			</ul>
+			<div class="toggle_btn">
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="divCompteur">
+			<p>Total of photographies :</p>
+			<div id="compteur">0</div>
+		</div>
+
+		<section id="photo" class="photo">
+			<div id="galerie" class="blur galerie">
+				
+			</div>
+		</section>
+
+		<div id="myModal" class="modal" onkeydown="keydown(event)">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="caption-container">
+      			<p id="caption"></p>
+    		</div>
+			<div class="modal-content">
+				<center id="content">
+					
+				</center>
+			
+			</div>
+			
+    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>		
+	</main>
+	
+	<footer>
+		<h3>Contact</h3>
+		<div class="contact">
+			<div class="mail">
+				mail: <a href="mail:toalan.coiffar@gmail.com">alan.coiffar@gmail.com</a>
+			</div>
+			<div class="tel">
+				tél: <a>0651292421</a>
+			</div>
+		</div>
+		<div class="contact">
+			<p>Find me :</p>
+		</div>
+		<div class="imageF">
+			<a href="https://www.facebook.com/alan.coiffard.94"><img src="img/fb.png" alt=""></a>
+			<a href="https://www.instagram.com/alan_coiffard/"><img src="img/insta.png" alt=""></a>
+			<a href="https://fr.linkedin.com/in/alan-coiffard-924033172"><img src="img/linkedin.png" alt=""></a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/move.js"></script>
+
+</body>
+</html>

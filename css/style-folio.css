@@ -1,0 +1,644 @@
+html, body {
+  background-color: black;
+  font-size: 16px;
+  line-height: 1.4;
+  color: white;
+  
+  font-family: 'portfolio';
+
+  margin: 0;
+  padding: 0; 
+}
+
+@font-face{
+    font-family: 'font-menu';
+    src: url("../font/Baskervville-Italic.ttf");
+}
+@font-face{
+  font-family: 'tout';
+  src: url("../font/Vogue.ttf");
+}
+@font-face {
+  font-family: 'portfolio';
+  src: url(../font/Chapaza.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.maclasse{
+    max-height:250px;
+    max-width:300px;
+}
+/* ||   NAV    || */
+.active {
+    color: yellow;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 110px;
+    font-family: 'font-menu';
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+}
+
+.e {
+    width: 100%;
+}
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
+.logo {
+    background-color: white;
+    width: 125px;
+    border-radius: 5px;
+}
+
+nav a {
+    width: 10%;
+}
+
+li a {
+    margin: 2vw;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.lang {
+    background-color: rgba(10,10,10,0.4);
+    padding: 5px;
+    
+    border: 3px solid grey;
+    border-radius: 5px;
+    color: grey;
+    transition: 0.5s
+}
+
+.lang a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.lang a {
+    margin-right: 10px;
+}
+
+.lang .select {
+    color: red;
+}
+
+
+
+@media screen and (min-width: 751px) {
+    .toggle_btn {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .block {
+        width: 200px;
+        position: fixed;
+        top: 94px;
+        left: 0;
+        bottom: 0;
+
+        background-color: grey;
+        padding-top: 10px;
+
+        text-align: center;
+        display: block;
+
+        text-decoration: underline;
+
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .e {
+        width: 50%;
+    }
+
+    li {
+        padding-top: 25px;
+        padding-right: 50px;
+    }
+
+    li a {
+        font-size: 25px;
+    }
+    li a:hover {
+        color: grey;
+        transition-duration: 0.5s;
+    }
+
+
+
+    .test{
+        margin-left: -240px;
+        transition-duration: 0.5s;
+    }
+
+    .test_open{
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+
+    .toggle_btn {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+
+    .toggle_btn span {
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+
+    .toggle_btn span:before {
+        content: '';
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+
+    .toggle_btn span:after {
+        content: '';
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+}
+
+@media screen and (max-height: 540px) {
+    li {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-height: 360px) {
+    li {
+        padding-top: 10px;
+    }
+}
+/* ||   FIN NAV   || */
+
+/* Portfolio */
+
+main {
+	padding-top: 110px;
+}
+main {
+  border-radius: 5px;
+  z-index: 99; 
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.divh1 {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.divBody {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.divCarou {
+    padding-top: 200px;
+    height: 110vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.h1 {
+  font-size: 50px;
+  padding: 25px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 20px;
+
+
+
+  text-decoration: underline;
+}
+
+.taille {
+  font-size: 30px;
+}
+
+.divh1 p {
+  text-transform: none;
+  font-weight: normal;
+  word-spacing: normal;
+  text-align: center;
+padding: 5px;
+  text-decoration: none;
+
+}
+
+.boutonHaut {
+
+    font-size: 35px;
+}
+
+@media screen and (max-width: 700px) {
+  .blockCitation {
+    opacity: 0;
+  }
+}
+
+.citation {
+  font-size: 19px;
+  font-style: italic; 
+}
+
+.citeur {
+  font-size: 19px;
+}
+
+/*!*/
+
+#btn-up{
+position:fixed;
+cursor:pointer;
+width:25px; height:25px;
+right:5px;
+bottom:50px;
+right: 50px;
+display:none;
+z-index:1;
+}
+#btn-up:hover{
+position:fixed;
+background-image:url(theme/up_button.jpg);
+}
+
+.divCompteur {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+div#compteur {
+    padding-top: 17px;
+    padding-left: 20px;
+}
+
+main h3 {
+	font-size: 7vw;
+	margin-top: 50px;
+	margin-bottom: -10px;
+	margin-left: 10vw;
+}
+
+
+
+/* PHOTOS */
+.photo {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+
+}
+
+.galerie {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: black;
+	width: 99%;
+	border-radius: 15px; 
+}
+
+.galerie img {
+	flex: 1 1 auto;
+	width: auto;
+	height: auto;
+	max-width: 600px;
+	max-height: 300px;
+	margin: 0.5rem;
+	object-fit: cover;
+	border: 1px solid #353535FF;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #353535FF;
+	transform: scale(1);
+	transition: transform 1s;
+}
+
+@media screen and (max-width: 740px) {
+	.photo {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 2rem 0;
+	}	
+
+	.galerie {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		background-color: black;
+		width: 99%;
+		border-radius: 15px; 
+	}
+
+	.galerie img {
+		flex: 1 1 auto;
+		width: auto;
+		height: auto;
+		max-width: 395px;
+		max-height: 150px;
+		margin: 0.5rem;
+		object-fit: cover;
+		border: 1px solid #353535FF;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px #353535FF;
+		transform: scale(1);
+		transition: transform 1s;
+	}
+}
+/*
+#galerie img:hover {
+	transform-origin: 50% 50%;
+	transform: scale(1.1);
+	z-index: 1;
+	border-radius: 5px;
+	box-shadow: none;
+}*/
+/*
+.blur img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur img:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+*/
+
+/* FIN PORTFOLIO */
+
+/* ||   LIGHTBOX   || */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    
+    margin: auto;
+    padding: 0;
+    width: 100%;
+	padding-top: 1%;
+
+
+}
+
+@media screen and (max-height: 550px) {
+    .modal-content {
+        padding-top: 0.1%;
+    }
+
+    .modal {
+        padding-top: 70px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 70vh;
+        border-radius: 10px;
+    border: 3px solid black;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+
+
+
+
+
+.demo:hover {
+  opacity: 0.7;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  opacity: 0.5;
+}
+
+/* ||   FOOTER   || */
+@font-face{
+    font-family: 'footer';
+    src: url('../font/Signatra.otf');
+}
+
+.overlay-mf {
+    color: black;
+}
+
+footer {
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 5%;
+}
+
+footer h3 {
+    padding-left: 5vw;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+footer a img {
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imageF {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+
+/* ||   FIN FOOTER   || */
